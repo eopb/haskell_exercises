@@ -10,3 +10,8 @@ ifEvenSquare = ifEven square
 
 ifEvenInc = ifEven inc
     where inc x = x + 1
+
+ifEvenCube = ifEven cube
+    where
+        cube = swapArgs (^) 3
+        swapArgs f = (\x y -> f y x)
