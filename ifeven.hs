@@ -11,7 +11,12 @@ ifEvenSquare = ifEven square
 ifEvenInc = ifEven inc
     where inc x = x + 1
 
+swapArgs f = (\x y -> f y x)
+
 ifEvenCube = ifEven cube
     where
         cube = swapArgs (^) 3
-        swapArgs f = (\x y -> f y x)
+
+ifEvenDoTo4 = genIfEvenDoTo 4
+    where
+        genIfEvenDoTo = swapArgs ifEven
