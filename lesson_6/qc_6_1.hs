@@ -1,0 +1,1 @@
+backwardInfinity = reverse [1..]
