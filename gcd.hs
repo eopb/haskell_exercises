@@ -1,4 +1,4 @@
-myGcd a b = if remainder == 0
-    then b
-    else myGcd b remainder
+myGcd a b = case remainder of
+    0 -> b
+    _ -> myGcd b remainder
     where remainder = a `mod` b
