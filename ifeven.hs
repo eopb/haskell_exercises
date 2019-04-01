@@ -11,12 +11,10 @@ ifEvenSquare = ifEven square
 ifEvenInc = ifEven inc
     where inc x = x + 1
 
-swapArgs f = (\x y -> f y x)
-
 ifEvenCube = ifEven cube
     where
-        cube = swapArgs (^) 3
+        cube = flip (^) 3
 
 ifEvenDoTo4 = genIfEvenDoTo 4
     where
-        genIfEvenDoTo = swapArgs ifEven
+        genIfEvenDoTo = flip ifEven

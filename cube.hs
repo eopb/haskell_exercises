@@ -1,3 +1,1 @@
-cube = swapArgs (^) 3
-
-swapArgs f = (\x y -> f y x)
+cube = flip (^) 3
