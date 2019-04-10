@@ -1,0 +1,1 @@
+myElem x list = length (filter (x ==) list) /= 0
