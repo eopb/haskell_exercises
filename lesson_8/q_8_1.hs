@@ -1,1 +1,2 @@
-myReverse xs = foldl (flip (:)) [] xs
+myReverse :: [a] -> [a]
+myReverse = foldl (flip (:)) []
