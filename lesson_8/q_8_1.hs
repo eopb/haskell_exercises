@@ -1,0 +1,1 @@
+myReverse xs = foldl (flip (:)) [] xs
