@@ -1,2 +1,2 @@
-subseq start end xs = take difference (drop start xs)
+subseq start end = (take difference . drop start)
     where difference = end - start
