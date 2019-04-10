@@ -1,2 +1,2 @@
 myLength [] = 0
-myLength (x:xs) = 1 + myLength xs
+myLength (_:xs) = 1 + myLength xs
