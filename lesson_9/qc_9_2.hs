@@ -1,0 +1,1 @@
+myProduct xs = foldr (*) 1 xs
