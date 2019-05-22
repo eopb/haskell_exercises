@@ -1,2 +1,3 @@
 # haskell_exercises
-from a book I have
+
+These are many of the exercises from a book I have learnt Haskell with.
